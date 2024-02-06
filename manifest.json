@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "Simple Song Identifier",
+    "version": "1.0",
+    "description": "Identify songs being played around you.",
+    "permissions": ["activeTab", "storage"],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/icon-16x16.png",
+        "48": "images/icon-48x48.png",
+        "128": "images/icon-128x128.png"
+      }
+    },
+    "icons": {
+        "16": "images/icon-16x16.png",
+        "48": "images/icon-48x48.png",
+        "128": "images/icon-128x128.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
