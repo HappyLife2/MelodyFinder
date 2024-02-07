@@ -1,5 +1,5 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "Simple Song Identifier",
     "version": "1.0",
     "description": "Identify songs being played around you.",
